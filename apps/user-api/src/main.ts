@@ -14,6 +14,14 @@ app.get('/api', (req, res) => {
   res.send({ message: 'Welcome to user-api!' });
 });
 
+app.get('/api/info', (req, res) => {
+  const { age, location } = req.query;
+  res.json({
+    age: age as string,
+    location: location as string
+  });
+});
+
 const port = process.env.PORT || 3333;
 const server = app.listen(port, () => {
   console.log(`Listening at http://localhost:${port}/api`);
