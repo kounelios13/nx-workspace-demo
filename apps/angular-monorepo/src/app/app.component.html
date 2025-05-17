@@ -4,14 +4,11 @@
     <div class="flex justify-between h-16">
       <div class="flex items-center">
         <div class="flex-shrink-0">
-          <span class="text-2xl font-bold text-indigo-600">Logo</span>
+          <span class="text-2xl font-bold text-indigo-600">NgRx Demo</span>
         </div>
         <div class="hidden md:block ml-10">
           <div class="flex space-x-4">
             <a href="#" class="text-gray-700 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium">Home</a>
-            <a href="#" class="text-gray-700 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium">About</a>
-            <a href="#" class="text-gray-700 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium">Services</a>
-            <a href="#" class="text-gray-700 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium">Contact</a>
           </div>
         </div>
       </div>
@@ -42,40 +39,44 @@
 </div>
 
 <!-- Main Content -->
-<div class="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
-  <div class="px-4 py-6 sm:px-0">
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-      <!-- Feature Card 1 -->
-      <div class="bg-white overflow-hidden shadow rounded-lg">
-        <div class="p-6">
-          <h3 class="text-lg font-medium text-gray-900">Feature One</h3>
-          <p class="mt-2 text-base text-gray-500">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore.
-          </p>
-        </div>
-      </div>
+<main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+  <!-- Counter Section -->
+  <div class="bg-white shadow rounded-lg p-6 mb-8">
+    <app-counter></app-counter>
+  </div>
 
-      <!-- Feature Card 2 -->
-      <div class="bg-white overflow-hidden shadow rounded-lg">
-        <div class="p-6">
-          <h3 class="text-lg font-medium text-gray-900">Feature Two</h3>
-          <p class="mt-2 text-base text-gray-500">
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
-          </p>
-        </div>
+  <!-- Feature Cards -->
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    <!-- Feature Card 1 -->
+    <div class="bg-white overflow-hidden shadow rounded-lg">
+      <div class="p-6">
+        <h3 class="text-lg font-medium text-gray-900">Feature One</h3>
+        <p class="mt-2 text-base text-gray-500">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore.
+        </p>
       </div>
+    </div>
 
-      <!-- Feature Card 3 -->
-      <div class="bg-white overflow-hidden shadow rounded-lg">
-        <div class="p-6">
-          <h3 class="text-lg font-medium text-gray-900">Feature Three</h3>
-          <p class="mt-2 text-base text-gray-500">
-            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla.
-          </p>
-        </div>
+    <!-- Feature Card 2 -->
+    <div class="bg-white overflow-hidden shadow rounded-lg">
+      <div class="p-6">
+        <h3 class="text-lg font-medium text-gray-900">Feature Two</h3>
+        <p class="mt-2 text-base text-gray-500">
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
+        </p>
+      </div>
+    </div>
+
+    <!-- Feature Card 3 -->
+    <div class="bg-white overflow-hidden shadow rounded-lg">
+      <div class="p-6">
+        <h3 class="text-lg font-medium text-gray-900">Feature Three</h3>
+        <p class="mt-2 text-base text-gray-500">
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla.
+        </p>
       </div>
     </div>
   </div>
-</div>
-
-<router-outlet></router-outlet>
+  
+  <router-outlet></router-outlet>
+</main>
