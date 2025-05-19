@@ -5,7 +5,7 @@
 
 import express from 'express';
 import * as path from 'path';
-
+import * as authRouter from './routes/auth';
 const app = express();
 
 app.use('/assets', express.static(path.join(__dirname, 'assets')));
@@ -22,6 +22,8 @@ app.get('/api/info', (req, res) => {
   });
 });
 
+app.use(express.json());
+app.use("/auth", authRouter.default);
 const port = process.env.PORT || 3333;
 const server = app.listen(port, () => {
   console.log(`Listening at http://localhost:${port}/api`);

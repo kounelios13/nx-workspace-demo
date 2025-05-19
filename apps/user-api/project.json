@@ -12,7 +12,10 @@
       "dependsOn": ["build"],
       "options": {
         "buildTarget": "user-api:build",
-        "runBuildTargetDependencies": false
+        "runBuildTargetDependencies": false,
+        "buildTargetOptions": {
+          "sourceMaps": true
+        }
       },
       "configurations": {
         "development": {
